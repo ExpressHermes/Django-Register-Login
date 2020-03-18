@@ -11,6 +11,8 @@
 
 ## How to start
 
+ Following commands are for linux. Please google their windows alternative
+
 * Clone the repo on your machine.
 * Setup a virtual environment for python3 using command:
 ```
@@ -39,7 +41,8 @@ python3 -m venv myvenv
  
  * Go to the port shown in your terminal to see your app
  
- #### Create a super user in admin using below command to check registered user
+ #### Super User 
+ To check the registered users, create super user using given command and login to admin page.
  ```
  python manage.py createsuperuser
  ```
