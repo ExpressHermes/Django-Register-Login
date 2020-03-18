@@ -1,0 +1,15 @@
+{% extends 'register_app/base.html' %}
+{% block content %}
+  <div class="jumbotron">
+    {% if registered %}
+      <h3>Registeration successful. Go to <a href="{% url 'register_app/user_login' %}">Login Page</a> to login.</h3>
+    {% else %}
+      <h3> Register here: </h3>
+      <form method="post">
+        {% csrf_token %}
+        {{ user_form.as_p }}
+        <input type="submit" name="" value="Register">
+      </form>
+    {% endif %}
+  </div>
+{% endblock %}
